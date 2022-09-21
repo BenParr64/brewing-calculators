@@ -28,11 +28,11 @@ const Ibu: NextPage = () => {
               When hops are measured in grams, divide grams by 28 to get ounces.
             </li>
             <li>
-              Example 1: 1.5 oz Brewer's Gold, having 6.7% Alpha Acid rating =
+              Example 1: 1.5 oz Brewer&apos;s Gold, having 6.7% Alpha Acid rating =
               1.5 x 6.7 = 10.05 AAU.
             </li>
             <li>
-              Example 2: 42 g Brewer's Gold, having 6.7% Alpha Acid rating = (42
+              Example 2: 42 g Brewer&apos;s Gold, having 6.7% Alpha Acid rating = (42
               / 28) x 6.7 = 10.05 AAU.
             </li>
           </ul>
