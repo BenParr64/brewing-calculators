@@ -1,0 +1,22 @@
+.navContainer{
+    height: 120px;
+    -webkit-box-shadow: 0px 13px 23px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 23px -13px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 23px -13px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.linksContainer{
+    font-size: smaller;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.topLevelNav{
+    margin-left: 10px;
+    margin-right: 10px;
+}

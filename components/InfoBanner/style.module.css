@@ -1,0 +1,10 @@
+.bannerContainer{
+    background-color: #bf6800;
+    color: white;
+    font-size: small;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}

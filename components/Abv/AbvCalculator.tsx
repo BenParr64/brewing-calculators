@@ -1,0 +1,65 @@
+import { Input, Table } from "@nextui-org/react";
+import React, { useEffect, useState } from "react";
+
+const calculateAbv = (original: number, final: number): number =>
+  (final - original) * 131.25;
+
+const formatAbv = (abv: number) : string =>
+    `${Math.round((abv + Number.EPSILON) * 100) / 100}%`
+
+const AbvCalculator = () => {
+  const [finalGravity, setFinalGravity] = useState(1.01);
+  const [originalGravity, setOriginalGravity] = useState(1.05);
+  const [abv, setAbv] = useState(calculateAbv(originalGravity, finalGravity));
+
+  useEffect(() => {
+    setAbv(calculateAbv(originalGravity, finalGravity));
+  }, [finalGravity, originalGravity]);
+
+  return (
+    <>
+      <table>
+        <thead>
+            <td>Alcohol By Volume Calculator:</td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Original Gravity</td>
+            <td>
+              <Input
+                bordered
+                defaultValue={originalGravity.toString()}
+                type="number"
+                onChange={(e) => setOriginalGravity(parseFloat(e.target.value))}
+              />
+            </td>
+          </tr>
+          <tr>
+          <td>Final Gravity</td>
+            <td>
+              <Input
+                bordered
+                defaultValue={finalGravity}
+                type="number"
+                onChange={(e) => setFinalGravity(parseFloat(e.target.value))}
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Alcohol by Volume</td>
+            <td>
+              <Input
+                readOnly
+                bordered
+                value={formatAbv(abv)}
+                type="text"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  );
+};
+
+export default AbvCalculator;
