@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import AbvCalculator from "../components/Abv/AbvCalculator";
 import PageContainer from "../components/PageContainer/PageContainer";
-import styles from "../styles/Home.module.css";
+import styles from "../assets/styles/Home.module.css";
 
 const Ibu: NextPage = () => {
   return (

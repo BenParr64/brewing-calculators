@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import AbvCalculator from "../components/Abv/AbvCalculator";
 import PageContainer from "../components/PageContainer/PageContainer";
-import styles from "../styles/Home.module.css";
+import styles from "../assets/styles/Home.module.css";
 
 const Abv: NextPage = () => {
   return (
