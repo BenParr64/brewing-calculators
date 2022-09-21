@@ -1,21 +1,27 @@
-.bannerContainer{
-    background-color: #311c15;
-    color: white;
-    font-weight: 600;
-    font-size: large;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 37px;
+.bannerContainer {
+  background-color: #311c15;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 37px;
 }
 
-.contactLinks{
-    width: 40%;
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 933px) {
+  .bannerContainer {
+    display: none;
+  }
 }
 
-.contactLink{
-    margin-left: 10px;
-    margin-right: 10px;
+.contactLinks {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactLink {
+  margin-left: 10px;
+  margin-right: 10px;
 }

@@ -8,6 +8,12 @@
     background-color: white;
 }
 
+@media screen and (max-width: 400px) {
+    .navContainer{
+        height: 100px;
+    }
+}
+
 .linksContainer{
     font-size: smaller;
     font-weight: 700;

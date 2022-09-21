@@ -1,5 +1,6 @@
 import { Input, Table } from "@nextui-org/react";
 import React, { useEffect, useState } from "react";
+import styles from './styles.module.css';
 
 const calculateAbv = (original: number, final: number): number =>
   (final - original) * 131.25;
@@ -23,7 +24,7 @@ const AbvCalculator = () => {
             <td>Alcohol By Volume Calculator:</td>
         </thead>
         <tbody>
-          <tr>
+          <tr className={styles.tableRow}>
             <td>Original Gravity</td>
             <td>
               <Input
@@ -34,7 +35,7 @@ const AbvCalculator = () => {
               />
             </td>
           </tr>
-          <tr>
+          <tr className={styles.tableRow}>
           <td>Final Gravity</td>
             <td>
               <Input
@@ -45,7 +46,7 @@ const AbvCalculator = () => {
               />
             </td>
           </tr>
-          <tr>
+          <tr className={styles.tableRow}>
             <td>Alcohol by Volume</td>
             <td>
               <Input
