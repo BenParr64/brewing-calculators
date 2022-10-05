@@ -46,7 +46,7 @@ import { NavigationLink } from "./Navigation";
     },
     {
       name: "Recipes",
-      link: "/recipes",
+      link: "/recipes/create",
       subLink: {
         name: "Abv",
         link: "/abv"

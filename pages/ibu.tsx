@@ -3,6 +3,7 @@ import Head from "next/head";
 import AbvCalculator from "../components/Abv/AbvCalculator";
 import PageContainer from "../components/PageContainer/PageContainer";
 import styles from "../assets/styles/Home.module.css";
+import { Container } from "@nextui-org/react";
 
 const Ibu: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const Ibu: NextPage = () => {
       </Head>
 
       <main>
-        <PageContainer>
+        <Container>
           <h1>Calculating AAU</h1>
           <ul>
             <li>
@@ -28,12 +29,12 @@ const Ibu: NextPage = () => {
               When hops are measured in grams, divide grams by 28 to get ounces.
             </li>
             <li>
-              Example 1: 1.5 oz Brewer&apos;s Gold, having 6.7% Alpha Acid rating =
-              1.5 x 6.7 = 10.05 AAU.
+              Example 1: 1.5 oz Brewer&apos;s Gold, having 6.7% Alpha Acid
+              rating = 1.5 x 6.7 = 10.05 AAU.
             </li>
             <li>
-              Example 2: 42 g Brewer&apos;s Gold, having 6.7% Alpha Acid rating = (42
-              / 28) x 6.7 = 10.05 AAU.
+              Example 2: 42 g Brewer&apos;s Gold, having 6.7% Alpha Acid rating
+              = (42 / 28) x 6.7 = 10.05 AAU.
             </li>
           </ul>
           <p>
@@ -41,7 +42,7 @@ const Ibu: NextPage = () => {
             calculate the ABV.
           </p>
           <AbvCalculator />
-        </PageContainer>
+        </Container>
       </main>
     </div>
   );

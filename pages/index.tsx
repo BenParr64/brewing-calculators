@@ -1,3 +1,4 @@
+import { Container } from "@nextui-org/react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -18,38 +19,38 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Kegthat.com Calculators</h1>
+        <Container>
+          <h1 className={styles.title}>Kegthat.com Calculators</h1>
 
-        <p className={styles.description}>
-          Get started by selecting one of the calculators below!{" "}
-        </p>
+          <p className={styles.description}>
+            Get started by selecting one of the calculators below!{" "}
+          </p>
 
-        <div className={styles.grid}>
-          <Link href="/abv">
-            <div className={styles.card}>
-              <h2>Abv Calculator &rarr;</h2>
-              <p>
-                Calculate the Alcohol by Volume using original and final
-                gravity.
-              </p>
-            </div>
-          </Link>
+          <div className={styles.grid}>
+            <Link href="/abv">
+              <div className={styles.card}>
+                <h2>Abv Calculator &rarr;</h2>
+                <p>
+                  Calculate the Alcohol by Volume using original and final
+                  gravity.
+                </p>
+              </div>
+            </Link>
 
-          <Link href="/ibu">
-            <div className={styles.card}>
-              <h2>IBU Calculator &rarr;</h2>
-              <p>
-                International bittering units are used to tell how bitter your
-                beer is.
-              </p>
-            </div>
-          </Link>
-        </div>
+            <Link href="/ibu">
+              <div className={styles.card}>
+                <h2>IBU Calculator &rarr;</h2>
+                <p>
+                  International bittering units are used to tell how bitter your
+                  beer is.
+                </p>
+              </div>
+            </Link>
+          </div>
+        </Container>
       </main>
 
-      <footer className={styles.footer}>
-       
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
   );
 };
