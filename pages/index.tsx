@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Kegthat.com Calculators!</h1>
+        <h1 className={styles.title}>Kegthat.com Calculators</h1>
 
         <p className={styles.description}>
           Get started by selecting one of the calculators below!{" "}
