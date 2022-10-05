@@ -1,7 +1,7 @@
 import * as React from "react";
 import styles from './style.module.css';
 
-const BannerMessage = "FREE POSTAGE OVER £75* | ORDERS NOW BEING DISPATCHED AS USUAL"
+const BannerMessage = "Kegthat Calculators Site"
 
 const InfoBanner = () => {
   return (
