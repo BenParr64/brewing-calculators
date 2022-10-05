@@ -23,7 +23,7 @@ const Abv: NextPage = () => {
           <h1>Alcohol By Volume Abv Calculator</h1>
           <p>
             Original gravity (OG) measures how a great deal sugar is gift
-            withinside the wort earlier than it's miles fermented. The very last
+            withinside the wort earlier than it&lsquo;s miles fermented. The very last
             gravity (FG) is how a great deal sugar is left over whilst
             fermentation is done. A decrease very last gravity shows a dry or
             crisp flavor, at the same time as a better very last gravity shows a
