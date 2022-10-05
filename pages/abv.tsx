@@ -11,18 +11,26 @@ const Abv: NextPage = () => {
       <Head>
         <title>Abv Calculator</title>
         <meta name="description" content="Abv calculator" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1"
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <PageContainer>
-          <h1>Abv Calculator</h1>
+          <h1>Alcohol By Volume Abv Calculator</h1>
           <p>
-            This calculator uses the original gravity and final gravity to
-            calculate the ABV.
+            Original gravity (OG) measures how a great deal sugar is gift
+            withinside the wort earlier than it's miles fermented. The very last
+            gravity (FG) is how a great deal sugar is left over whilst
+            fermentation is done. A decrease very last gravity shows a dry or
+            crisp flavor, at the same time as a better very last gravity shows a
+            candy or malty flavor. The length of the space among OG and FG may
+            be used to calculate how a great deal alcohol the beer contains.
           </p>
-          <AbvCalculator/>
+          <AbvCalculator />
         </PageContainer>
       </main>
     </div>

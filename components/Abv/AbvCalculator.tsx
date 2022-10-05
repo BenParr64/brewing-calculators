@@ -19,7 +19,6 @@ const AbvCalculator = () => {
 
   const isValid = (input: number) => input < 1 && input > 0;
 
-
   return (
     <>
       <table>
@@ -48,7 +47,6 @@ const AbvCalculator = () => {
                 type="number"
                 step=".01"
                 onChange={(e) => setFinalGravity(parseFloat(e.target.value))}
-                
               />
             </td>
           </tr>
