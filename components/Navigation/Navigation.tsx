@@ -1,5 +1,4 @@
 import * as React from "react";
-import useMobileDetect from "../../hooks/useMobileDetect";
 import { navigationLinks } from "./Links.types";
 import styles from "./style.module.css";
 import logo from "../../assets/images/logo.png";
@@ -11,13 +10,29 @@ export interface NavigationLink {
   subLink?: NavigationLink;
 }
 
+let MOBILE_VIEW = false;
+if (typeof window !== 'undefined') {
+  MOBILE_VIEW = window.innerWidth < 468;
+}
+
+
+
 const Navigation = () => {
-  const { isDesktop, isMobile } = useMobileDetect();
+  const [isMobile, setIsMobile] = React.useState(!MOBILE_VIEW);
+
+  const handleSidebarDisplay = (e: any) => {
+    e.preventDefault();
+    if (window.innerWidth > 468) {
+      setIsMobile(!isMobile);
+    } else {
+      setIsMobile(false);
+    }
+  };
 
   return (
     <nav className={styles.navContainer}>
         <a href="https://kegthat.com/"><Image src={logo} alt="kegthat-logo" width="100px" height="100px" /></a>
-      {!isMobile() && (
+      {/* {!isMobile && (
         <div className={styles.linksContainer}>
           {navigationLinks.map((linkItem, index) => (
             <a className={styles.topLevelNav} key={index} href={linkItem.link}>
@@ -25,7 +40,7 @@ const Navigation = () => {
             </a>
           ))}
         </div>
-      )}
+      )} */}
     </nav>
   );
 };
