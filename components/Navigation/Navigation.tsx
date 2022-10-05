@@ -10,24 +10,24 @@ export interface NavigationLink {
   subLink?: NavigationLink;
 }
 
-let MOBILE_VIEW = false;
-if (typeof window !== 'undefined') {
-  MOBILE_VIEW = window.innerWidth < 468;
-}
+// let MOBILE_VIEW = false;
+// if (typeof window !== 'undefined') {
+//   MOBILE_VIEW = window.innerWidth < 468;
+// }
 
 
 
 const Navigation = () => {
-  const [isMobile, setIsMobile] = React.useState(!MOBILE_VIEW);
+  // const [isMobile, setIsMobile] = React.useState(!MOBILE_VIEW);
 
-  const handleSidebarDisplay = (e: any) => {
-    e.preventDefault();
-    if (window.innerWidth > 468) {
-      setIsMobile(!isMobile);
-    } else {
-      setIsMobile(false);
-    }
-  };
+  // const handleSidebarDisplay = (e: any) => {
+  //   e.preventDefault();
+  //   if (window.innerWidth > 468) {
+  //     setIsMobile(!isMobile);
+  //   } else {
+  //     setIsMobile(false);
+  //   }
+  // };
 
   return (
     <nav className={styles.navContainer}>
