@@ -1,0 +1,8 @@
+.Container{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.CreateContainer{
+    width: 60%;
+}
